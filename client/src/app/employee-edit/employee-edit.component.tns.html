@@ -1,0 +1,71 @@
+<StackLayout>
+  <Label text="employee-edit works" textWrap="true"></Label>
+  <Label text="This is a migrated component" textWrap="true"></Label>
+  <Label text="Update it to provide the UI elements required in your mobile app" textWrap="true"></Label>
+</StackLayout>
+
+<!--
+Original Web template:
+
+<div class="container">
+	<h2>Employee Data</h2>
+	<form name="employeeForm" class="css-form" (ngSubmit)="onSubmit()"
+		#employeeForm="ngForm" novalidate>
+
+		<div class="form-group">
+			<label for="nik">NIK</label> <input type="text" class="form-control"
+				id="nik" [(ngModel)]="employee.nik" #nik="ngModel" name="nik"
+				required disabled>
+			<div *ngIf="nik.invalid && (nik.dirty || nik.touched)"
+				class="alert alert-danger">
+				<div *ngIf="nik.errors.required">NIK is required.</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="name">Name</label> <input type="text"
+				class="form-control" id="name" [(ngModel)]="employee.name"
+				#name="ngModel" name="name" required>
+			<div *ngIf="name.invalid && (name.dirty || name.touched)"
+				class="alert alert-danger">
+				<div *ngIf="name.errors.required">Name is required.</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="division">Division: </label> <select
+				[(ngModel)]="employee.divisionId" name="division" id="division"
+				#division="ngModel" class="form-control" required>
+				<option value="">---Please select---</option>
+				<option *ngFor="let division of divisions" [ngValue]="division.id">{{division.name}}</option>
+			</select>
+			<div *ngIf="division.invalid && (division.dirty || division.touched)"
+				class="alert alert-danger">
+				<div *ngIf="division.errors.required">Division is required.</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="position">Position: </label> <select
+				[(ngModel)]="employee.positionId" name="position" id="position" (change)="positionChanged()"
+				#position="ngModel" class="form-control" required>
+				<option *ngFor="let position of positions" [ngValue]="position.id">{{position.name}}</option>
+			</select>
+			<div *ngIf="position.invalid && (position.dirty || position.touched)"
+				class="alert alert-danger">
+				<div *ngIf="position.errors.required">Position is required.</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<input type="button" class="btn btn-primary"
+					routerLink="/employeeListComponent" value="Cancel" />
+			</div>
+			<div class="col">
+				<input type="submit" class="btn btn-primary" value="Save"
+					[disabled]="employeeForm.invalid" />
+			</div>
+		</div>
+	</form>
+</div>
+
+-->
