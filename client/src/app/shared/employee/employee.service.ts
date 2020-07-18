@@ -9,10 +9,10 @@ import { Position } from '../../model/position';
   providedIn: 'root'
 })
 export class EmployeeService {
-  private employeeUrl = '//0.0.0.0:8080/main/employees';
-  private positionUrl = '//0.0.0.0:8080/main/positions';
-  private divisionUrl = '//0.0.0.0:8080/main/divisions';
-  private employeeSequenceUrl = '//0.0.0.0:8080/main/employee-sequence';
+  private employeeUrl = '//localhost:8080/main/employees';
+  private positionUrl = '//localhost:8080/main/positions';
+  private divisionUrl = '//localhost:8080/main/divisions';
+  private employeeSequenceUrl = '//localhost:8080/main/employee-sequence';
   constructor(private http: HttpClient) {
   }
 
